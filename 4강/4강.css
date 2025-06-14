@@ -1,0 +1,44 @@
+body {
+  font-family: sans-serif;
+}
+
+ul,
+li {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 20px;
+}
+
+.header {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  flex-wrap: wrap;
+  position: fixed;
+  z-index: 1;
+  padding-left: 17px;
+  padding-right: 17px;
+  height: 50px;
+}
+.header .cate_menu {
+  display: flex;
+}
+.header .my_menu {
+  display: flex;
+  gap: 20px;
+}
+.header .logo {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.main_img .main_img_item {
+  display: flex;
+}/*# sourceMappingURL=4강.css.map */

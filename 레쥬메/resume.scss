@@ -1,0 +1,785 @@
+// 프리텐다드 웹폰트
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css");
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+
+}
+
+ul,
+li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* 프로필 파트 숨김 상태 */
+.hidden_on_load {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 0.8s ease-out;
+}
+
+/* 프로필 파트 등장 시 상태 */
+.show_on_scroll {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+// 포트폴리오 글자 왼쪽에서 등장 
+
+.hidden_on_load_L {
+    opacity: 0;
+    transform: translateX(-50px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.show_on_scroll_L {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+
+
+
+.header {
+
+    justify-content: center;
+
+
+    .on_resume {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+
+        white-space: nowrap;
+        padding-left: 30px;
+        padding-right: 30px;
+        box-sizing: border-box;
+
+
+        line-height: 500px;
+        font-family: "Bebas Neue", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 450px;
+
+        animation: slideFade_In 1s ease-out forwards;
+
+
+        .word {
+            line-height: 500px;
+            letter-spacing: -1px;
+
+        }
+
+
+        .semicolon_fix {
+
+            font-size: 478px;
+            line-height: 380px;
+
+
+        }
+
+
+    }
+
+    .resume_sub_txt {
+
+        font-family: "Pretendard Variable";
+        font-weight: 500;
+        display: flex;
+        justify-content: space-between;
+        // flex-wrap: nowrap;
+        // white-space: nowrap;
+        align-items: center;
+        padding-left: 57px;
+        padding-right: 50px;
+        margin-top: -80px;
+
+        animation: slideFade_In 1s ease-out forwards;
+
+    }
+
+    @keyframes slideFade_In {
+        from {
+            opacity: 0;
+            transform: translateX(-30px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+
+
+}
+
+
+.txt_wrap {
+
+
+    .header_main_txt {
+        font-family: "Pretendard Variable", sans-serif;
+        letter-spacing: 0.2px;
+        font-size: 30px;
+        padding-left: 62vw;
+        padding-top: 200px;
+        font-weight: 400;
+        line-height: 50px;
+        box-sizing: border-box;
+
+        animation: slideFade_In_2 1s ease-out forwards;
+
+
+        .tight_main_txt {
+            margin-top: 25px;
+            line-height: 36px;
+            word-break: break-all;
+        }
+
+
+
+    }
+
+    @keyframes slideFade_In_2 {
+        from {
+            opacity: 0;
+            transform: translateX(30px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+
+}
+
+.profile_wrap {
+
+    display: flex;
+    margin-top: 288px;
+    margin-bottom: 240px;
+
+    .profile_part {
+
+        padding-left: 40px;
+        padding-bottom: 100px;
+        width: 30vw;
+        flex: 1;
+        box-sizing: border-box;
+
+
+        .copy_recommend {
+            width: fit-content;
+            height: fit-content;
+            margin-top: 30px;
+            font-family: "Pretendard Variable";
+            font-weight: 400;
+            font-size: 14px;
+            letter-spacing: 1px;
+            color: #909090;
+
+
+        }
+
+        .name_birth {
+
+            padding-bottom: 46px;
+
+            .name {
+                padding-bottom: 46px;
+                font-family: "Pretendard Variable";
+                font-weight: 700;
+                font-size: 25px;
+                padding-bottom: 16px;
+
+                display: flex;
+                align-items: center;
+                gap: 80px;
+
+            }
+
+            .resume_button {
+                text-decoration: none;
+                color: #606060;
+                font-family: "Pretendard Variable";
+                font-weight: 300;
+                font-size: 18px;
+                box-sizing: border-box;
+
+                cursor: pointer;
+                transition: all 0.3s;
+
+                &:hover {
+                    background-color: #111;
+                    color: #fff;
+                }
+            }
+
+            // .birth {
+            //     font-family: "Pretendard Variable";
+            //     font-weight: 300;
+            //     color: #606060;
+            //     font-size: 16px;
+            // }
+
+
+
+        }
+
+        .email_phone {
+            font-size: 18px;
+            letter-spacing: 1px;
+            font-family: "Pretendard Variable";
+            font-weight: 400;
+            box-sizing: border-box;
+
+
+
+            .my_email {
+                padding-bottom: 16px;
+                cursor: pointer;
+                transition: color 0.2s, text-decoration 0.2s;
+                // box-sizing: border-box;
+
+                &:hover {
+                    color: #606060;
+                    text-decoration: underline;
+                }
+
+                .copied_e_msg {
+                    display: none;
+                    background-color: #e8e8e8;
+                    font-size: 14px;
+                    color: #111111;
+                    padding: 6px 10px;
+                    border-radius: 12px;
+                    margin-left: 10px;
+                }
+
+            }
+
+            .my_phone {
+                cursor: pointer;
+                transition: color 0.2s text-decoration 0.2s;
+
+                &:hover {
+                    color: #606060;
+                    text-decoration: underline;
+                }
+
+
+                .copied_p_msg {
+                    display: none;
+                    background-color: #e8e8e8;
+                    font-size: 14px;
+                    color: #111111;
+                    padding: 6px 10px;
+                    border-radius: 12px;
+                    margin-left: 10px;
+                }
+            }
+        }
+
+    }
+
+    .activity_career {
+        // margin-left: 230px;
+        width: 40vw;
+        flex: 1;
+        box-sizing: border-box;
+
+
+
+        .activity_section {
+            padding-bottom: 87px;
+
+
+            .activity_head {
+                font-size: 25px;
+                letter-spacing: 0px;
+                font-family: "Pretendard Variable";
+                font-weight: 700;
+            }
+
+            .activity_contents {
+
+                display: flex;
+                gap: 0px;
+                padding-top: 57px;
+                box-sizing: border-box;
+
+
+
+                .activity_sum {
+                    font-size: 17px;
+                    letter-spacing: 0px;
+                    font-family: "Pretendard Variable";
+                    font-weight: 400;
+                    color: #606060;
+                    min-width: 400px;
+                }
+
+                .activity_year {
+                    font-size: 17px;
+                    letter-spacing: -1px;
+                    font-family: "Pretendard Variable";
+                    font-weight: 400;
+                    color: #bababa;
+                }
+            }
+        }
+
+    }
+
+    // 서브 커리어 시작 
+
+    .sub_career {
+        // margin-left: 270px;
+        width: 30vw;
+        flex: 1;
+        box-sizing: border-box;
+
+
+        .activity_section {
+            padding-bottom: 87px;
+
+
+            .activity_head {
+                font-size: 25px;
+                letter-spacing: 0px;
+                font-family: "Pretendard Variable";
+                font-weight: 700;
+            }
+
+            .activity_contents {
+
+                display: flex;
+                gap: 0px;
+                padding-top: 57px;
+
+
+                .activity_sum {
+                    font-size: 17px;
+                    letter-spacing: 0px;
+                    font-family: "Pretendard Variable";
+                    font-weight: 400;
+                    color: #606060;
+                    min-width: 400px;
+                }
+
+                .activity_year {
+                    font-size: 17px;
+                    letter-spacing: -1px;
+                    font-family: "Pretendard Variable";
+                    font-weight: 400;
+                    color: #bababa;
+                }
+            }
+        }
+
+    }
+
+
+}
+
+// 프로필 끝 / 포트폴리오 파트 시작 
+
+.portfolio_wrap {
+
+    .portfolio_part {
+        padding-left: 40px;
+
+        .portfolio_head {
+            font-size: 58px;
+            letter-spacing: -2px;
+            font-family: "Roboto";
+            font-weight: 700;
+
+        }
+
+        .head_sum {
+            padding-top: 26px;
+            font-size: 24px;
+            letter-spacing: 0px;
+            font-family: "Pretendard Variable";
+            font-weight: 300;
+            color: #606060;
+
+        }
+    }
+
+    // 포폴 콘텐츠 파트 시작 
+    .portfolio_contents {
+        padding-top: 270px;
+
+
+        .contents_card {
+
+            display: flex;
+            margin-bottom: 166px;
+            justify-content: space-between;
+            padding: 0px 40px;
+            box-sizing: border-box;
+
+
+            .contents_card_wrap {
+
+                display: flex;
+                justify-content: space-between;
+                gap: 0;
+
+
+                .content_num {
+                    font-size: 45px;
+                    letter-spacing: -2px;
+                    font-family: "Pretendard Variable";
+                    font-weight: 700;
+                    color: #111111;
+                }
+
+
+                .main_sum {
+
+                    margin-left: 157px;
+
+
+                    .content_year {
+                        font-size: 20px;
+                        letter-spacing: 0px;
+                        font-family: "Pretendard Variable";
+                        font-weight: 450;
+                        color: #bababa;
+                    }
+
+                    .content_name {
+                        margin-top: 95px;
+                        font-size: 45px;
+                        letter-spacing: -2px;
+                        font-family: "Pretendard Variable";
+                        font-weight: 700;
+                        color: #111111;
+                    }
+
+                    .content_sum {
+                        margin-top: 32px;
+                        width: 595px;
+                        font-size: 20px;
+                        letter-spacing: 0px;
+                        font-family: "Pretendard Variable";
+                        font-weight: 400;
+                        color: #111111;
+
+                        word-break: keep-all;
+                    }
+
+                    .view_button {
+                        margin-top: 56px;
+
+                        .open_modal {
+                            width: 137px;
+                            height: 48px;
+                            border-radius: 24px;
+
+                            background-color: #fff;
+                            border: 1px solid #111;
+                            color: #111;
+
+                            font-family: "Pretendard Variable";
+                            font-size: 16px;
+                            font-weight: 400;
+
+                            cursor: pointer;
+                            transition: all 0.3s;
+
+                            &:hover {
+                                background-color: #111;
+                                color: #fff;
+                            }
+
+                        }
+                    }
+
+
+                }
+            }
+
+            .content_thumb {
+                width: 30%;
+                // height: 400px;
+
+                border-radius: 24px;
+
+                overflow: hidden;
+
+                img {
+                    background-size: cover;
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    box-shadow: 10px 10px 10px 2px rgba(0, 0, 0, 0.08);
+
+                    display: block;
+
+                }
+            }
+
+
+        }
+
+
+    }
+
+}
+
+// 포트폴리오 파트 끝
+// 컨택 파트 시작 
+
+.contact_part {
+
+    margin-top: 200px;
+    margin-bottom: 130px;
+
+
+    .contact_notice {
+        margin-left: 40px;
+
+        .contact_head {
+            font-size: 58px;
+            letter-spacing: -2px;
+            font-family: "Roboto";
+            font-weight: 700;
+
+        }
+
+        .contact_sum {
+            padding-top: 30px;
+            font-size: 24px;
+            letter-spacing: 0px;
+            font-family: "Pretendard Variable";
+            font-weight: 300;
+            color: #111;
+
+        }
+    }
+
+    .contact_info {
+        margin-top: 180px;
+
+
+        .info_name {
+            font-size: 24px;
+            letter-spacing: 0px;
+            font-family: "Pretendard Variable";
+            font-weight: 700;
+            color: #111;
+
+            padding-left: 1590px;
+
+        }
+
+        .email_phone_c {
+
+
+            padding-left: 1220px;
+            display: flex;
+            gap: 70px;
+            margin-top: 10px;
+            box-sizing: border-box;
+
+            font-size: 19px;
+            letter-spacing: 1.2px;
+            font-family: "Pretendard Variable";
+            font-weight: 400;
+
+            .my_email_C {
+                padding-bottom: 16px;
+                cursor: pointer;
+                transition: color 0.2s, text-decoration 0.2s;
+
+                &:hover {
+                    color: #606060;
+                    text-decoration: underline;
+                }
+
+                .copied_e_msg_C {
+                    display: none;
+                    background-color: #e8e8e8;
+                    font-size: 14px;
+                    color: #111111;
+                    padding: 6px 10px;
+                    border-radius: 12px;
+                    margin-left: 10px;
+                }
+
+            }
+
+            .my_phone_C {
+                cursor: pointer;
+                transition: color 0.2s text-decoration 0.2s;
+
+                &:hover {
+                    color: #606060;
+                    text-decoration: underline;
+                }
+
+
+                .copied_p_msg_C {
+                    display: none;
+                    background-color: #e8e8e8;
+                    font-size: 14px;
+                    color: #111111;
+                    padding: 6px 10px;
+                    border-radius: 12px;
+                    margin-left: 10px;
+                }
+            }
+        }
+
+        .copy_recommend {
+            padding-left: 1520px;
+            font-family: "Pretendard Variable";
+            font-weight: 400;
+            font-size: 14px;
+            letter-spacing: 1px;
+            color: #909090;
+        }
+
+    }
+}
+
+
+// 모달
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    // backdrop-filter: blur(1px);
+    background-color: rgba(42, 42, 42, 0.8);
+
+    .modal_content {
+        position: relative;
+        margin: 10% auto;
+        padding-top: 50px;
+        padding-bottom: 20px;
+        background: rgb(255, 255, 255);
+        width: 100%;
+        max-width: 1000px;
+        border-radius: 8px;
+        text-align: center;
+        // box-shadow: 0 15px 20px rgba($color: #8c8c8c, $alpha: 1.0);
+
+        .close_modal {
+            position: absolute;
+            top: 20px;
+            right: 24px;
+            // font-size: 2rem;
+            width: 20px;
+            height: 20px;
+            cursor: pointer;
+            z-index: 10;
+        }
+
+
+        .slider {
+
+            .prev_btn,
+            .next_btn {
+
+                font-family: "Pretendard Variable";
+                font-weight: 100;
+                position: absolute;
+                top: 50%;
+                font-size: 50px;
+                background: none;
+                border: none;
+                cursor: pointer;
+                transform: translateY(-50%);
+
+
+
+            }
+
+            .prev_btn {
+                left: 30px;
+            }
+
+            .next_btn {
+                right: 30px;
+            }
+
+
+
+        }
+
+        .slider img {
+            width: 100%;
+            max-height: 600px;
+            object-fit: contain;
+            // display: flex;
+            // align-items: center;
+
+
+        }
+
+
+
+
+    }
+
+    // 모달 스크롤 3-4 
+    .modal_content_scroll {
+        position: relative;
+        margin: 4% auto;
+        padding-top: 50px;
+        padding-bottom: 20px;
+        // padding-left:8px;
+        background: rgb(255, 255, 255);
+        width: 100%;
+        max-width: 1000px;
+        border-radius: 8px;
+        text-align: center;
+
+        /* 세로 스크롤용 추가 */
+        max-height: 80vh;
+        /* 화면 높이의 80%까지 높이 제한 */
+        overflow-y: auto;
+
+        .close_modal {
+            position: absolute;
+            top: 20px;
+            right: 24px;
+            // font-size: 2rem;
+            width: 20px;
+            height: 20px;
+            cursor: pointer;
+            z-index: 10;
+        }
+
+        .scroll_container {
+            img {
+                width: 100%;
+
+            }
+        }
+
+    }
+
+
+}

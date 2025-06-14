@@ -1,0 +1,46 @@
+@media (max-width: 700px) {
+    .header {
+        left: 15px;
+        right: 15px;
+
+        .main_menu {
+            display: none;
+        }
+
+        .mobile_menu {
+            display: block;
+        }
+    }
+
+    .contents_wrap {
+        .main_copy {
+            box-sizing: border-box;
+            padding-left: 15px;
+        }
+
+        .business_items {
+            padding-left: 15px;
+            padding-right: 15px;
+
+            .bs_item {
+                display: flex;
+                gap: 15px;
+
+            }
+
+        }
+
+        .back_img {
+
+            .back_copy {
+                box-sizing: border-box;
+                width: 100%;
+                padding-left: 15px;
+                padding-right: 15px;
+            }
+        }
+
+
+    }
+
+}

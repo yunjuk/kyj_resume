@@ -1,0 +1,30 @@
+@media (max-width: 700px) {
+  .header {
+    left: 15px;
+    right: 15px;
+  }
+  .header .main_menu {
+    display: none;
+  }
+  .header .mobile_menu {
+    display: block;
+  }
+  .contents_wrap .main_copy {
+    box-sizing: border-box;
+    padding-left: 15px;
+  }
+  .contents_wrap .business_items {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .contents_wrap .business_items .bs_item {
+    display: flex;
+    gap: 15px;
+  }
+  .contents_wrap .back_img .back_copy {
+    box-sizing: border-box;
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}/*# sourceMappingURL=6_day_mobile.css.map */

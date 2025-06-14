@@ -1,0 +1,36 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+ul, li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.header {
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  display: flex;
+  height: 50px;
+  width: 100%;
+  box-sizing: border-box;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+.header .logo_section {
+  position: absolute;
+  left: 50%;
+  transform: -50%;
+}
+.header .cate_menu {
+  display: flex;
+  gap: 20px;
+}
+.header .my_menu {
+  display: flex;
+  gap: 20px;
+}/*# sourceMappingURL=4강 복습2.css.map */

@@ -1,0 +1,104 @@
+body {
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+ul,
+li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+}
+
+.header {
+
+    position: fixed;
+    padding-left: 30px;
+    padding-right: 30px;
+    top: 16px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+
+    .nav_menu {
+        display: flex;
+
+    }
+
+
+}
+
+.wrap {
+
+    .pr_text {
+        padding-top: 196px;
+        padding-left: 30px;
+
+    }
+
+    .main_items {
+
+        display: flex;
+        width: 100%;
+        margin-top: 30px;
+        gap: 15px;
+        padding-left: 30px;
+        padding-right: 30px;
+        box-sizing: border-box;
+
+
+        .main_item {
+
+            // width: calc(33.3% - (30px /3));
+            flex: 1;
+            // 1:1:1 비율로 둔다. 
+            border-radius: 30px;
+            overflow: hidden;
+        
+            // radius 30px 넣은 게 overflow:hidden 넣어야 보임. 넘치는 걸 가려준다 이런 의미. 히든 안 넣으면 이미지가 넘침 
+            position: relative;
+            // client_txt 정렬할 때 쓰려는 포지션. 
+
+            &:hover {
+               .pr_img{
+                 transform: scale(1.2);
+               }
+            }
+            // 메인 아이템 클래스에 호버 넣는 이유는 마우스가 client_text 위로 올라갈 때 스케일이 풀려서임. 
+
+
+            .pr_img {
+
+                transition-duration: 0.3s;
+                // 그런데 트랜지션-듀레이션은 img에 넣는데 이미지 자체에 효과를 주기 때문? 
+
+                img{
+                    width: 100%;
+                    // height값이 부모에 없고, 이미지가 2배 크기인데 히든으로 숨겨 놓았기 때문에 img에 width값을 주는 거. 
+                    // 부모 요소를 받아오는 게 아니고 자식 요소를 받아와서 그럼 
+                }
+
+
+            }
+
+            .img_text {
+                position: absolute;
+                top: 21px;
+                justify-content: center;
+                width: 100%;
+                display: flex;
+                color: #fff;
+                gap: 15px;
+            }
+
+        }
+
+
+
+
+    }
+
+}

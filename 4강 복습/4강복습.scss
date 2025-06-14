@@ -1,0 +1,108 @@
+body {
+
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+ul,
+li {
+    margin: 0;
+    padding: 0;
+    // 마진 패딩 0씩 안 주면, 레프트 패딩 쪽이 더 띄어짐. ul/li에는 기본 패딩이 적용되어 있다-> gpt
+    list-style: none;
+
+
+
+}
+
+.header {
+
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    display: flex;
+    position: fixed;
+    width: 100%;
+    height: 50px;
+    padding-left: 40px;
+    padding-right: 40px;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    z-index: 1;
+    background-color: #FEFAF5;
+    // 백그라운드 컬러 안 하면, 메인 이미지 보더 라이트 선이 보임.  
+    border-bottom: 1px solid black;
+
+    .logo_section {
+        position: absolute;
+        left: 50%;
+        left: calc(50% - 100px);
+    }
+
+    .cate_menu {
+
+        display: flex;
+        gap: 20px;
+
+    }
+
+    .my_menu {
+        display: flex;
+        gap: 20px;
+
+    }
+
+
+
+}
+
+// 헤더 끝
+// 메인 이미지 시작
+
+.main_items {
+
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 50px;
+    // 패딩 탑은 이미지와 헤더 사이의 영역을 띄우는 역할 
+
+
+    .main_item {
+
+        width: 50%;
+        position: relative;
+        border-bottom: 1px solid black;
+        border-right: 1px solid black;
+        box-sizing: border-box;
+        // 박스 사이징 안하면, 솔리드 1px씩 추가된 거 때문에, width 값이 안 맞아서 레이아웃 달라짐
+
+        &:nth-child(2n) {
+            border-right: none;
+        }
+        // main_item에 준 보더 라이트가 짝수 번째 이미지에게는
+        // 필요가 없어서 없애줌. 
+
+
+       
+
+        .pr_img {
+            img{
+                width: 100%;
+                // img는 기본적으로 인라인 요소라서, 글자 취급됨 그래서 여백이 생기는데,
+                // 여백을 없애기 위해 디스플레이 블럭을 해줌 
+                display: block;
+            }
+        }
+
+        .pr_info {
+
+            position: absolute;
+            top: 100px;
+            left: 80px;
+        }
+
+    }
+
+}
