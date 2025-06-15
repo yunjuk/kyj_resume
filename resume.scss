@@ -70,7 +70,8 @@ li {
         font-family: "Bebas Neue", sans-serif;
         font-weight: 400;
         font-style: normal;
-        font-size: 450px;
+        // font-size: 450px;
+        font-size: 28vw;
         box-sizing: border-box;
 
         animation: slideFade_In 1s ease-out forwards;
@@ -85,7 +86,8 @@ li {
 
         .semicolon_fix {
 
-            font-size: 478px;
+            // font-size: 478px;
+            font-size: 28vw;
             line-height: 380px;
 
 
@@ -103,8 +105,10 @@ li {
         // flex-wrap: nowrap;
         // white-space: nowrap;
         align-items: center;
-        padding-left: 57px;
-        padding-right: 50px;
+        // padding-left: 57px;
+        // padding-right: 50px;
+        padding-left: 2vw;
+        padding-right: 1.6vw;
         margin-top: -80px;
 
         animation: slideFade_In 1s ease-out forwards;
@@ -128,6 +132,9 @@ li {
 
 
 .txt_wrap {
+
+    box-sizing: border-box;
+    // 달라지는 거 없음. 
 
 
     .header_main_txt {
@@ -403,6 +410,7 @@ li {
 
     .portfolio_part {
         padding-left: 40px;
+        padding-right: 40px;
 
         .portfolio_head {
             font-size: 58px;
