@@ -120,6 +120,7 @@ li {
   display: flex;
   margin-top: 288px;
   margin-bottom: 240px;
+  box-sizing: border-box;
 }
 .profile_wrap .profile_part {
   padding-left: 40px;
