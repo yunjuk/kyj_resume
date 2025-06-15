@@ -89,9 +89,6 @@ li {
   }
 }
 
-.txt_wrap {
-  box-sizing: border-box;
-}
 .txt_wrap .header_main_txt {
   font-family: "Pretendard Variable", sans-serif;
   letter-spacing: 0.2px;
@@ -253,6 +250,7 @@ li {
 .profile_wrap .sub_career {
   width: 30vw;
   flex: 1;
+  padding-right: 40px;
   box-sizing: border-box;
 }
 .profile_wrap .sub_career .activity_section {
