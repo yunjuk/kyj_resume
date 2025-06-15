@@ -63,7 +63,7 @@ li {
         white-space: nowrap;
         padding-left: 30px;
         padding-right: 30px;
-        
+
 
 
         line-height: 500px;
@@ -596,23 +596,34 @@ li {
             font-weight: 700;
             color: #111;
 
-            padding-left: 1590px;
+            // padding-left: 1590px;
+            display: flex;
+            justify-content: flex-end;
+            padding-right: 40px;
 
         }
 
         .email_phone_c {
 
 
-            padding-left: 1220px;
+            // padding-left: 1220px;
+            
             display: flex;
             gap: 70px;
             margin-top: 10px;
+            // padding-left: 82vw;
+
+            justify-content: flex-end;
+            width: 100%;
             box-sizing: border-box;
+            padding-right: 2.5vw;
+            
 
             font-size: 19px;
             letter-spacing: 1.2px;
             font-family: "Pretendard Variable";
             font-weight: 400;
+            box-sizing: border-box;
 
             .my_email_C {
                 padding-bottom: 16px;
@@ -631,7 +642,7 @@ li {
                     color: #111111;
                     padding: 6px 10px;
                     border-radius: 12px;
-                    margin-left: 10px;
+                    margin-left: 1vw;
                 }
 
             }
@@ -653,13 +664,17 @@ li {
                     color: #111111;
                     padding: 6px 10px;
                     border-radius: 12px;
-                    margin-left: 10px;
+                    // margin-left: 10px;
+                    margin-left: 1vw;
                 }
             }
         }
 
         .copy_recommend {
-            padding-left: 1520px;
+            // padding-left: 1520px;
+            display: flex;
+            justify-content: flex-end;
+            padding-right: 2.5vw;
             font-family: "Pretendard Variable";
             font-weight: 400;
             font-size: 14px;
@@ -685,7 +700,10 @@ li {
 
     .modal_content {
         position: relative;
-        margin: 10% auto;
+        // margin: 10% auto;
+        margin: 0 auto;
+        margin-top: 9vh;
+        margin-bottom: 5vh;
         padding-top: 50px;
         padding-bottom: 20px;
         background: rgb(255, 255, 255);
@@ -693,7 +711,7 @@ li {
         max-width: 1000px;
         border-radius: 8px;
         text-align: center;
-        // box-shadow: 0 15px 20px rgba($color: #8c8c8c, $alpha: 1.0);
+    
 
         .close_modal {
             position: absolute;

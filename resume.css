@@ -418,18 +418,23 @@ li {
   font-family: "Pretendard Variable";
   font-weight: 700;
   color: #111;
-  padding-left: 1590px;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 40px;
 }
 .contact_part .contact_info .email_phone_c {
-  padding-left: 1220px;
   display: flex;
   gap: 70px;
   margin-top: 10px;
+  justify-content: flex-end;
+  width: 100%;
   box-sizing: border-box;
+  padding-right: 2.5vw;
   font-size: 19px;
   letter-spacing: 1.2px;
   font-family: "Pretendard Variable";
   font-weight: 400;
+  box-sizing: border-box;
 }
 .contact_part .contact_info .email_phone_c .my_email_C {
   padding-bottom: 16px;
@@ -449,7 +454,7 @@ li {
   color: #111111;
   padding: 6px 10px;
   border-radius: 12px;
-  margin-left: 10px;
+  margin-left: 1vw;
 }
 .contact_part .contact_info .email_phone_c .my_phone_C {
   cursor: pointer;
@@ -466,10 +471,12 @@ li {
   color: #111111;
   padding: 6px 10px;
   border-radius: 12px;
-  margin-left: 10px;
+  margin-left: 1vw;
 }
 .contact_part .contact_info .copy_recommend {
-  padding-left: 1520px;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 2.5vw;
   font-family: "Pretendard Variable";
   font-weight: 400;
   font-size: 14px;
@@ -489,7 +496,9 @@ li {
 }
 .modal .modal_content {
   position: relative;
-  margin: 10% auto;
+  margin: 0 auto;
+  margin-top: 9vh;
+  margin-bottom: 5vh;
   padding-top: 50px;
   padding-bottom: 20px;
   background: rgb(255, 255, 255);
