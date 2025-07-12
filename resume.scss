@@ -189,6 +189,8 @@ li {
         flex: 1;
         box-sizing: border-box;
 
+        min-width: 0;
+
 
         .copy_recommend {
             width: fit-content;
@@ -311,6 +313,8 @@ li {
         flex: 1;
         box-sizing: border-box;
 
+        min-width: 0;
+
 
 
         .activity_section {
@@ -330,6 +334,8 @@ li {
                 gap: 0px;
                 padding-top: 57px;
                 box-sizing: border-box;
+
+                min-width: 0;
 
 
 
@@ -363,6 +369,9 @@ li {
         padding-right: 40px;
         box-sizing: border-box;
 
+        min-width: 0;
+        
+
 
         .activity_section {
             padding-bottom: 87px;
@@ -381,6 +390,9 @@ li {
                 gap: 0px;
                 padding-top: 57px;
 
+                // 오른쪽 여백 없애기 위한 추가
+                // flex-wrap: nowrap;
+
 
                 .activity_sum {
                     font-size: 17px;
@@ -389,6 +401,10 @@ li {
                     font-weight: 400;
                     color: #606060;
                     min-width: 400px;
+
+
+                    // 오른쪽 여백 삭제 위한 추가
+                    // min-width: 200px;
                 }
 
                 .activity_year {
@@ -397,6 +413,9 @@ li {
                     font-family: "Pretendard Variable";
                     font-weight: 400;
                     color: #bababa;
+
+                    // 오른쪽 여백 위한 추가 
+                    // white-space: nowrap;
                 }
             }
         }
