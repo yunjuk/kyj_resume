@@ -370,7 +370,7 @@ li {
         box-sizing: border-box;
 
         min-width: 0;
-        
+
 
 
         .activity_section {
@@ -504,6 +504,21 @@ li {
                         font-family: "Pretendard Variable";
                         font-weight: 700;
                         color: #111111;
+                    }
+
+                    .figma_link {
+                        display: inline-block;
+                        padding: 6px 12px;
+                        background: #f4f4f4;
+                        border-radius: 6px;
+                        font-size: 14px;
+                        color: #000;
+                        text-decoration: none;
+                        transition: 0.2s;
+                    }
+
+                    .figma_link:hover {
+                        background: #e6e6e6;
                     }
 
                     .content_sum {
