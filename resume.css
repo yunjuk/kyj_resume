@@ -371,8 +371,8 @@ li {
 .portfolio_wrap .portfolio_contents .contents_card .contents_card_wrap .main_sum .view_button {
   margin-top: 56px;
 }
-.portfolio_wrap .portfolio_contents .contents_card .contents_card_wrap .main_sum .view_button .view_more_link,
-.portfolio_wrap .portfolio_contents .contents_card .contents_card_wrap .main_sum .view_button .open_modal {
+.portfolio_wrap .portfolio_contents .contents_card .contents_card_wrap .main_sum .view_button a.view_more_link,
+.portfolio_wrap .portfolio_contents .contents_card .contents_card_wrap .main_sum .view_button button.open_modal {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -390,8 +390,8 @@ li {
   text-decoration: none;
   box-sizing: border-box;
 }
-.portfolio_wrap .portfolio_contents .contents_card .contents_card_wrap .main_sum .view_button .view_more_link:hover,
-.portfolio_wrap .portfolio_contents .contents_card .contents_card_wrap .main_sum .view_button .open_modal:hover {
+.portfolio_wrap .portfolio_contents .contents_card .contents_card_wrap .main_sum .view_button a.view_more_link:hover,
+.portfolio_wrap .portfolio_contents .contents_card .contents_card_wrap .main_sum .view_button button.open_modal:hover {
   background-color: #111;
   color: #fff;
 }
