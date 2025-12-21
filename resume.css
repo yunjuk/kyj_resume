@@ -345,6 +345,19 @@ li {
   font-weight: 700;
   color: #111111;
 }
+.portfolio_wrap .portfolio_contents .contents_card .contents_card_wrap .main_sum .figma_link {
+  display: inline-block;
+  padding: 6px 12px;
+  background: #f4f4f4;
+  border-radius: 6px;
+  font-size: 14px;
+  color: #000;
+  text-decoration: none;
+  transition: 0.2s;
+}
+.portfolio_wrap .portfolio_contents .contents_card .contents_card_wrap .main_sum .figma_link:hover {
+  background: #e6e6e6;
+}
 .portfolio_wrap .portfolio_contents .contents_card .contents_card_wrap .main_sum .content_sum {
   margin-top: 32px;
   width: 595px;
@@ -358,7 +371,11 @@ li {
 .portfolio_wrap .portfolio_contents .contents_card .contents_card_wrap .main_sum .view_button {
   margin-top: 56px;
 }
+.portfolio_wrap .portfolio_contents .contents_card .contents_card_wrap .main_sum .view_button .view_more_link,
 .portfolio_wrap .portfolio_contents .contents_card .contents_card_wrap .main_sum .view_button .open_modal {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   width: 137px;
   height: 48px;
   border-radius: 24px;
@@ -370,7 +387,10 @@ li {
   font-weight: 400;
   cursor: pointer;
   transition: all 0.3s;
+  text-decoration: none;
+  box-sizing: border-box;
 }
+.portfolio_wrap .portfolio_contents .contents_card .contents_card_wrap .main_sum .view_button .view_more_link:hover,
 .portfolio_wrap .portfolio_contents .contents_card .contents_card_wrap .main_sum .view_button .open_modal:hover {
   background-color: #111;
   color: #fff;

@@ -536,7 +536,15 @@ li {
                     .view_button {
                         margin-top: 56px;
 
+
+                        .view_more_link,
                         .open_modal {
+
+                            display: inline-flex;
+                            align-items: center;
+                            justify-content: center;
+
+
                             width: 137px;
                             height: 48px;
                             border-radius: 24px;
@@ -551,6 +559,8 @@ li {
 
                             cursor: pointer;
                             transition: all 0.3s;
+                            text-decoration: none;
+                            box-sizing: border-box;
 
                             &:hover {
                                 background-color: #111;
